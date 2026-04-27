@@ -1,0 +1,13 @@
+{
+  "name": "QoS Lab - DiffServ",
+  "image": "ubuntu:22.04",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": false,
+      "configureZshAsDefaultShell": false,
+      "installOhMyZsh": false,
+      "upgradePackages": true
+    }
+  },
+  "postCreateCommand": "apt update && apt install -y iperf3 tcpdump iproute2 net-tools iputils-ping nano"
+}
